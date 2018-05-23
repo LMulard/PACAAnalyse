@@ -1,0 +1,14 @@
+
+  <ul *ngFor = "let p of polluants">
+    <li>{{p.nom}}</li>
+    <li>{{p.formule}}</li>
+    <button (click)="editPolluant(p.id)">Edit polluant id={{p.id}} </button>
+  </ul>
+  
+
+  <input [(ngModel)]="polluant.nom"> Nom du polluant <br>
+  <input [(ngModel)]="polluant.formule"> Formule <br>
+  <button (click)="addPolluant()" *ngIf="!edit">ajouter </button>
+  <button (click)="editOver()" *ngIf="edit">soumettre </button>
+
+  

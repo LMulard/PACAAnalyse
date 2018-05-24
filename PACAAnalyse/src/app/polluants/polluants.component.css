@@ -1,0 +1,21 @@
+
+button {
+    background-color: #474F4E;
+    border-radius : 10px;
+    color : #C3D9E2;
+}
+
+button:hover{
+    background-color: #6490A4;
+    font-style : italic;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+input {
+    border-radius : 5px;
+
+}

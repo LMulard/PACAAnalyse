@@ -1,10 +1,14 @@
+<div *ngIf = "polluantSelected != null">
+<app-polluant-detail [polluantDetails]="polluantSelected"></app-polluant-detail>
+</div>
 
   <ul *ngFor = "let p of polluants">
     <li>{{p.nom}}</li>
     <li>{{p.formule}}</li>
+    <button (click) = "select(p)">Details</button>
     <button (click)="editPolluant(p.id)">Edit polluant id={{p.id}} </button>
   </ul>
-  
+
 
   <input [(ngModel)]="polluant.nom"> Nom du polluant <br>
   <input [(ngModel)]="polluant.formule"> Formule <br>

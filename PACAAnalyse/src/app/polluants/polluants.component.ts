@@ -22,7 +22,6 @@ export class PolluantsComponent implements OnInit {
 
   constructor(private polluantsService: PolluantsService) {
 
-
   }
 
   ngOnInit() {

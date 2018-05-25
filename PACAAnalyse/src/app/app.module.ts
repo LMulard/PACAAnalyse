@@ -12,9 +12,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { RegionComponent } from './region/region.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { FleuvesComponent } from './fleuves/fleuves.component';
+import { PolluantComponent } from './polluant/polluant.component';
 
 const appRoutes: Routes = [
-  { path: '', component: AccueilComponent }, {path: 'polluants', component: PolluantsComponent}, {path: 'regions', component: RegionComponent}, {path: 'fleuves', component: FleuvesComponent}];
+  { path: '', component: AccueilComponent }, {path: 'polluants', component: PolluantsComponent}, {path: 'regions', component: RegionComponent},
+   {path: 'fleuves', component: FleuvesComponent},{path: 'polluant/:id', component: PolluantComponent}];
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ const appRoutes: Routes = [
     PolluantDetailComponent,
     RegionComponent,
     AccueilComponent,
-    FleuvesComponent
+    FleuvesComponent,
+    PolluantComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes), BrowserModule, FormsModule

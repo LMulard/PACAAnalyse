@@ -3,10 +3,11 @@
 </div>
 
   <ul *ngFor = "let p of polluants">
-    <li>{{p.nom}}</li>
+    <li>{{p.nom}}<a [routerLink] = "['/polluant', p.id]"> Voir</a></li>
     <li>{{p.formule}}</li>
     <button (click) = "select(p)">Details</button>
     <button (click)="editPolluant(p.id)">Edit polluant id={{p.id}} </button>
+    
   </ul>
 
 

@@ -1,0 +1,12 @@
+
+
+<div *ngIf="polluant">
+    <ul id="description">
+        <li>nom : {{polluant.nom}}</li>
+        <li>formule : {{polluant.formule}}</li>
+        <li>source : {{polluant.source}}</li>
+        <li>seuil Limite : {{polluant.seuilLimite}}</li>
+        <li>detection : {{polluant.detection}}</li>
+    </ul>
+</div>
+<img [src] = "'/assets/images/'+ polluant.photo">
